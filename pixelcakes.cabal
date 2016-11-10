@@ -1,0 +1,28 @@
+name:               pixelcakes
+version:            0.0.0
+cabal-version:      >= 1.8
+build-type:         Simple
+extra-source-files: routes
+
+executable          pixelcakes
+  main-is:          Main.hs
+  other-modules:    Application
+                    Foundation
+
+                    Add
+                    Handler.Produtos
+                    Handler.Servicos
+                    Handler.Usuario
+                    Handler.Contato
+
+  ghc-options:      -Wall -fwarn-tabs -O2
+
+  build-depends:  base
+                , yesod
+                , yesod-core
+                , text                          
+                , persistent                    
+                , persistent-postgresql
+                , monad-logger
+
+  ghc-options:    -threaded -O2 -rtsopts -with-rtsopts=-N

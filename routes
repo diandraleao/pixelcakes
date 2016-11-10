@@ -1,0 +1,14 @@
+/                                   HomeR       GET
+/aluno/cadastro                     AlunoR      GET POST
+/aluno/listagem                     ListAluR    GET
+/aluno/apagar/#ProdutosId           DelAlunoR   POST
+/disciplina/cadastro                DiscR       GET POST
+/disciplina/listagem                ListDiscR   GET
+/disciplina/apagar/#ServicosId      DelDiscR    POST
+/usuario/cadastro                   UsuarioR    GET POST
+/usuario/login                      LoginR      GET POST
+/logout                             LogoutR     POST
+/perfil                             PerfilR     GET
+/contato/cadastro                   ContatoR    GET POST
+/contato/listagem                   ListContR   GET
+/contato/apagar/#ContatoId          DelContatoR POST
