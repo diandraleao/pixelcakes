@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default" id="navbar-main">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Navegação alternativa
+                <span class="icon-bar">
+                <span class="icon-bar">
+                <span class="icon-bar">
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" style="padding:5px;"><img src=@{StaticR img_logo_png} alt="" style="height:50px;width:auto;">
+                <li>
+                    <a href="#">home
+                <li>
+                    <a href="#">sobre
+                <li>
+                    <a href="#">serviços
+                <li>
+                    <a href="#">galeria
+                <li>
+                    <a href="#">preços
+                <li>
+                    <a href="#">contato
