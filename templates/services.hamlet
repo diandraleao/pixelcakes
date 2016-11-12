@@ -1,0 +1,38 @@
+<article class="container-fluid" id="services">
+    <h2 class="h1">serviços</h2>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-1">
+                    <img src="http://placehold.it/150x150" alt="" class="img-circle img-responsive">
+                <div class="col-md-3">
+                    <h3 class="h4">Lorem Ipsum
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit pariatur rerum ad, eius, atque voluptates similique molestiae!
+
+                <div class="col-md-1">
+                    <img src="http://placehold.it/150x150" alt="" class="img-circle img-responsive">
+                <div class="col-md-3">
+                    <h3 class="h4">Lorem Ipsum
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates dolore sint provident commodi reiciendis ab quis.
+
+                <div class="col-md-1">
+                    <img src="http://placehold.it/150x150" alt="" class="img-circle img-responsive">
+                <div class="col-md-3">
+                    <h3 class="h4">Lorem Ipsum
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quo laudantium, recusandae sint, magni repudiandae architecto excepturi dolore minus.
+
+            <div class="container">
+                <h3 class="h2 text-uppercase text-center">preparo</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum earum repellat, ducimus ipsum consequatur animi ut repudiandae aperiam, illum? Et repellat sit fugiat sequi amet tempore aspernatur esse aperiam reiciendis.
+                    <div class="col-md-4">
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis possimus eum dicta doloribus ratione, laboriosam error accusantium beatae reprehenderit magni aliquam dolorum laborum dignissimos architecto tenetur totam.
+                    <div class="col-md-4">
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptate at, illum aliquam velit! Illo nostrum sunt, facere quia nobis, vitae sed? Id illum, itaque non earum numquam, soluta rem?
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="pull-right">veja mais
+                    <div class="col-md-4">
+                        <a href="#" class="pull-right">veja mais
+                    <div class="col-md-4">
+                        <a href="#" class="pull-right">veja mais

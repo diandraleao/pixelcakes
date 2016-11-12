@@ -1,0 +1,10 @@
+<article class="container-fluid" id="price">
+    <h2 class="h1">tabela de preços</h2>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-6">
+                    <img src=@{StaticR img_cupcake02_png} alt="" class="img-responsive">
+                <div class="col-md-6 intro-price">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                    <p class="text-center">
+                        <a href="#" class="btn btn-lg btn-price">CONFIRA

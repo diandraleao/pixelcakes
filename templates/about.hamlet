@@ -6,10 +6,10 @@
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolores fugit vero doloribus quis voluptatem error asperiores similique fugiat, sed, ab laborum, sit esse non ullam inventore ex illo labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex maiores sequi iste quisquam, quo, fuga saepe recusandae adipisci alias omnis soluta doloremque.
                 <br>
                 <div class="col-md-4">
-                    <img src="http://placehold.it/150x150" alt="" class="center-block img-responsive img-circle">
+                    <img src=@{StaticR img_iconcake_png} alt="" class="center-block img-responsive icon">
                 <div class="col-md-4">
-                    <img src="http://placehold.it/150x150" alt="" class="center-block img-responsive img-circle">
+                    <img src=@{StaticR img_iconcupcake_png} alt="" class="center-block img-responsive icon">
                 <div class="col-md-4">
-                    <img src="http://placehold.it/150x150" alt="" class="center-block img-responsive img-circle">
+                    <img src=@{StaticR img_iconwhiskbowl_png} alt="" class="center-block img-responsive icon">
             <div class="col-md-6 cupcake">
-                <img src="img/cupcake-sobre.png" alt="" class="center-block">
+                <img src=@{StaticR img_cupcakesobre_png} alt="" class="center-block">
