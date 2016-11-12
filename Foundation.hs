@@ -6,10 +6,13 @@ module Foundation where
 
 import Yesod
 import Data.Text
+import Yesod.Static
 import Database.Persist.Postgresql
     ( ConnectionPool, SqlBackend, runSqlPool)
 
-data App = App {connPool :: ConnectionPool }
+staticFiles "static"
+
+data App = App {getStatic :: Static , connPool :: ConnectionPool }
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
 Usuario
@@ -43,8 +46,9 @@ instance Yesod App where
     
     isAuthorized LoginR _ = return Authorized
     isAuthorized HomeR _ = return Authorized
-    isAuthorized ListAluR _ = return Authorized
-    isAuthorized ListDiscR _ = return Authorized
+    isAuthorized ListProdR _ = return Authorized
+    isAuthorized ListServR _ = return Authorized
+    isAuthorized ListContR _ = return Authorized
     isAuthorized UsuarioR _ = return Authorized
     isAuthorized _ _ = estaAutenticado
 

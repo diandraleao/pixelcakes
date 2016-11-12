@@ -16,10 +16,11 @@ executable          pixelcakes
                     Handler.Contato
 
   ghc-options:      -Wall -fwarn-tabs -O2
+                    -fforce-recomp
 
   build-depends:  base
                 , yesod
-                , yesod-core
+                , yesod-static
                 , text                          
                 , persistent                    
                 , persistent-postgresql
