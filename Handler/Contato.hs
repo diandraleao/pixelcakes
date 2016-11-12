@@ -61,7 +61,7 @@ getListContR = do
 postDelContatoR :: ContatoId -> Handler Html
 postDelContatoR alid = do 
                 runDB $ delete alid
-                redirect ListAluR
+                redirect ListProdR
 
 footerzinho :: Widget
 footerzinho = [whamlet|

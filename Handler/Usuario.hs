@@ -59,7 +59,7 @@ getUsuarioR = do
         
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav">
-                                        <li class="active">
+                                        <li>
                                             <a href=@{PerfilR}>home
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -110,6 +110,7 @@ getUsuarioR = do
                                             <form action=@{LogoutR} method=post>
                                                 <input type="submit" value="sair" class="btn-sair">
                                             
+                        <h2>Cadastrar usuário</h2>
                         <form action=@{UsuarioR} method=post enctype=#{enctype}>
                             ^{widget}
                             <input type="submit" value="Cadastrar" class="btn btn-default">
