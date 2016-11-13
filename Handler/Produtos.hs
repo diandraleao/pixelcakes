@@ -83,7 +83,7 @@ getProdutoR = do
                                                 
                                                 <li role="separator" class="divider"></li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href=@{ListUsuarioR}>
                                                         <span class="glyphicon glyphicon-th-list"></span>
                                                         ver todos
                                     <ul class="nav navbar-nav navbar-right">
@@ -167,7 +167,7 @@ postProdutoR = do
                                                     
                                                     <li role="separator" class="divider"></li>
                                                     <li>
-                                                        <a href="#">
+                                                        <a href=@{ListUsuarioR}>
                                                             <span class="glyphicon glyphicon-th-list"></span>
                                                             ver todos
                                         <ul class="nav navbar-nav navbar-right">
@@ -176,9 +176,9 @@ postProdutoR = do
                                                     <input type="submit" value="sair" class="btn-sair">
                                                     
                             <h2 class="alert alert-success text-center">Produto cadastrado com sucesso! 
-                            <p class="text-uppercase text-center">Produto: #{fromSqlKey alid}
+                            <p class="text-uppercase text-center">ID Produto: #{fromSqlKey alid}
                     |]
-                _ -> redirect HomeR
+                _ -> redirect IndexR
 
 -- SELECT * FROM produto ORDER BY nome
 getListProdR :: Handler Html
@@ -249,7 +249,7 @@ getListProdR = do
                                                 
                                                 <li role="separator" class="divider"></li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href=@{ListUsuarioR}>
                                                         <span class="glyphicon glyphicon-th-list"></span>
                                                         ver todos
                                     <ul class="nav navbar-nav navbar-right">
