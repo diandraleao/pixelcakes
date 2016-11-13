@@ -16,35 +16,6 @@ import Handler.Usuario
 import Handler.Contato
 ------------------
 mkYesodDispatch "App" resourcesApp
-
-getHomeR :: Handler Html
-getHomeR = do
-    sess <- lookupSession "_ID"
-    defaultLayout $ do
-        toWidget [lucius|
-            ul li {
-                display: inline;
-            }
-            a {
-                color: blue;
-            }
-        |]
-        [whamlet|
-            <h1> Meu primeiro site em Haskell!
-            <ul>
-                <li> <a href=@{ProdutoR}>Cadastro de produto
-                <li> <a href=@{ListProdR}>Listagem de produto
-                <li> <a href=@{ServicoR}>Cadastro de serviços
-                <li> <a href=@{ListServR}>Listagem de serviços
-                <li> <a href=@{ContatoR}>Cadastro de contato
-                <li> <a href=@{ListContR}>Listagem de contatos
-                $maybe _ <- sess
-                    <li> 
-                        <form action=@{LogoutR} method=post>
-                            <input type="submit" value="Logout">
-                $nothing
-                    <li> <a href=@{LoginR}>Login
-        |]
         
 getIndexR :: Handler Html
 getIndexR = defaultLayout $ do
