@@ -1,5 +1,4 @@
-/                                   HomeR           GET
-/pcakes                             IndexR          GET
+/                                   IndexR          GET
 /static                             StaticR         Static getStatic
 /produto/cadastro                   ProdutoR        GET POST
 /produto/listagem                   ListProdR       GET
@@ -9,6 +8,8 @@
 /servico/apagar/#ServicosId         DelServicoR     POST
 /usuario/cadastro                   UsuarioR        GET POST
 /usuario/login                      LoginR          GET POST
+/usuario/listagem                   ListUsuarioR    GET
+/usuario/apagar/#UsuarioId          DelUsuarioR     POST
 /logout                             LogoutR         POST
 /perfil                             PerfilR         GET
 /contato/cadastro                   ContatoR        GET POST
