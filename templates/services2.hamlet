@@ -1,0 +1,9 @@
+<div class="container">
+            <h2 class="text-center">Serviços </h2>
+            <br>
+            <div class="row">
+            $forall Entity alid servico <- servicos
+                <div class="col-md-4">
+                    <img src=@{StaticR img_food_png} alt="icon" class="center-block icon-servico">
+                    <h3 class="text-center titulo"> #{servicosNome  servico} 
+                    <p class="text-center"> #{servicosDescricao  servico}

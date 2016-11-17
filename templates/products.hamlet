@@ -1,0 +1,9 @@
+<div class="container">
+            <h2 class="text-center">Produtos </h2>
+            <br>
+            <div class="row">
+            $forall Entity alid produto <- produtos
+                <div class="col-md-3">
+                    <h3 class="text-center titulo"> #{produtosNome  produto} 
+                    <p class="text-center"> #{produtosDescricao  produto} 
+                    <p class="text-center">R$ #{produtosPreco    produto}
