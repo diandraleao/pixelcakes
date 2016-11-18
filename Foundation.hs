@@ -44,11 +44,14 @@ type Form a = Html -> MForm Handler (FormResult a, Widget)
 instance Yesod App where
     authRoute _ = Just LoginR
     
+    isAuthorized IndexR _ = return Authorized
     isAuthorized LoginR _ = return Authorized
-    isAuthorized HomeR _ = return Authorized
     isAuthorized ListProdR _ = return Authorized
+    isAuthorized ProdutosR _ = return Authorized
     isAuthorized ListServR _ = return Authorized
+    isAuthorized ServicosR _ = return Authorized
     isAuthorized ListContR _ = return Authorized
+    isAuthorized ContatoR _ = return Authorized
     isAuthorized UsuarioR _ = return Authorized
     isAuthorized _ _ = estaAutenticado
 
