@@ -7,4 +7,4 @@
                 <div class="col-md-6 intro-price">
                     <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
                     <p class="text-center">
-                        <a href="#" class="btn btn-lg btn-price">CONFIRA
+                        <a href=@{ProdutosR} class="btn btn-lg btn-price">CONFIRA
