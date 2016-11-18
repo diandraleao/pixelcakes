@@ -1,5 +1,7 @@
 /                                   IndexR          GET
 /static                             StaticR         Static getStatic
+/site/produtos                      ProdutosR       GET
+/site/servicos                      ServicosR       GET
 /produto/cadastro                   ProdutoR        GET POST
 /produto/listagem                   ListProdR       GET
 /produto/apagar/#ProdutosId         DelProdutoR     POST
