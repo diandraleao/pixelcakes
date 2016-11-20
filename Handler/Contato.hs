@@ -11,18 +11,61 @@ import Database.Persist.Postgresql
 
 formContato :: Form Contato
 formContato = renderDivs $ Contato
-    <$> areq textField "Nome do contato"    Nothing
-    <*> areq textField "E-mail do contato"  Nothing
-    <*> areq textField "Mensagem"           Nothing
+    <$> areq textField "Nome: "       Nothing
+    <*> areq textField "E-mail: "     Nothing
+    <*> areq textField "Mensagem: "   Nothing
 
 getContatoR :: Handler Html
 getContatoR = do
             (widget, enctype) <- generateFormPost formContato
-            defaultLayout [whamlet|
-             <form method=post action=@{ContatoR} enctype=#{enctype}>
-                 ^{widget}
-                 <input type="submit" value="Cadastrar">
-         |]
+            defaultLayout  $ do
+                setTitle "Pixel Cakes"
+                addStylesheetRemote "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                addStylesheetRemote "https://fonts.googleapis.com/css?family=Raleway"
+                addStylesheet $ StaticR css_main_css
+                addScriptRemote "https://code.jquery.com/jquery-3.1.1.min.js"
+                addScriptRemote "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                addScript $ StaticR js_main_js
+                [whamlet|
+                    <nav class="navbar navbar-default" id="">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Navegação alternativa
+                                    <span class="icon-bar">
+                                    <span class="icon-bar">
+                                    <span class="icon-bar">
+                    
+                    
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href=@{IndexR} style="padding:5px;"><img src=@{StaticR img_logo_png} alt="" style="height:50px;width:auto;">
+                                    <li>
+                                        <a href=@{IndexR}>home
+                                    <li>
+                                        <a href="#about">sobre
+                                    <li>
+                                        <a href=@{ServicosR}>serviços
+                                    <li>
+                                        <a href="#gallery">galeria
+                                    <li>
+                                        <a href=@{ProdutosR}>preços
+                                    <li>
+                                        <a href=@{ContatoR}>contato
+
+                    <main class="container">
+                        <h2 class="text-center">Contato </h2>
+                        <br>
+                        <div class="row">
+                            <form method=post action=@{ContatoR} enctype=#{enctype}>
+                                ^{widget}
+                                <input type="submit" value="Cadastrar">
+                                
+                    <footer>
+                        <div class="bg-footer">
+                            <img src=@{StaticR img_logobranco_png} alt="Logo Rodape" class="center-block logo-footer">
+                |]
 
 postContatoR :: Handler Html
 postContatoR = do
