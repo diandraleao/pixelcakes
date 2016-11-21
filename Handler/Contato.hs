@@ -58,10 +58,11 @@ getContatoR = do
                         <h2 class="text-center">Contato </h2>
                         <br>
                         <div class="row">
-                            <form method=post action=@{ContatoR} enctype=#{enctype}>
-                                ^{widget}
-                                <input type="submit" value="Cadastrar">
-                                
+                            <div class="col-md-4 col-md-offset-4">
+                                <form method=post action=@{ContatoR} enctype=#{enctype}>
+                                    ^{widget}
+                                    <input type="submit" value="Cadastrar" class="pull-right">
+                                    
                     <footer>
                         <div class="bg-footer">
                             <img src=@{StaticR img_logobranco_png} alt="Logo Rodape" class="center-block logo-footer">
