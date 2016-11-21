@@ -3,7 +3,8 @@
             <br>
             <div class="row">
             $forall Entity alid produto <- produtos
-                <div class="col-md-3">
+                <div class="col-md-3 produto-detalhes">
                     <h3 class="text-center titulo"> #{produtosNome  produto} 
                     <p class="text-center"> #{produtosDescricao  produto} 
-                    <p class="text-center">R$ #{produtosPreco    produto}
+                    <p class="text-center">
+                        <b>R$ #{produtosPreco    produto}
