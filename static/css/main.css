@@ -5,6 +5,25 @@ body{
 p{
 	font-size:15px;
 }
+label{
+    width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]{
+    border-radius: 5px;
+    border: 1px solid #F7B5B6;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    background-color: #FAC9CB;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #F7B5B6;
+    /*margin-top:15px;*/
+}
 #home{
 	background-image: url('../img/bgindex.jpg');
 	background-position: center top;
