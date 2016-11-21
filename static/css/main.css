@@ -24,6 +24,14 @@ input[type="submit"]{
     border: 1px solid #F7B5B6;
     /*margin-top:15px;*/
 }
+input[type="submit"]:hover{
+    background-color: #FCE4E4;
+    color: #f7acad;
+    border-radius: 5px;
+    border: 1px solid #FCE4E4;
+    transition: .6s;
+}
+
 #home{
 	background-image: url('../img/bgindex.jpg');
 	background-position: center top;
@@ -95,12 +103,12 @@ article#contact{
 	background-color: #ddd;
 }
 #price{
-	border: 2px solid #BDBDBD;
+	/*border: 2px solid #BDBDBD;*/
 }
 #price .intro-price {
 	width: 40%;
 	text-align: center;
-	margin-top: 160px;
+	margin-top: 100px;
 }
 a.btn-price{
 	border: 2px solid #F7ACAD;
@@ -115,7 +123,7 @@ img.icon-servico{
 	color: #F7ACAD;
 }
 main{
-	min-height: 550px;
+	min-height: 510px;
 }
 .bg-footer{
 	background-image: url('../img/footer.png');
@@ -124,8 +132,11 @@ main{
 	margin-top:20px;
 }
 img.logo-footer{
-	width: 50px;
+	width: 55px;
     padding-top: 13px;
+}
+.produto-detalhes{
+	min-height: 165px;
 }
 /* LOGIN */
 section#loginadmin{
@@ -144,4 +155,7 @@ img#imglogin{
 nav.navbar-nav#navbar-admin{
 	background-color: #fff;
     border-color: transparent;
+}
+.btn-sair{
+	margin-top: 17px;
 }
