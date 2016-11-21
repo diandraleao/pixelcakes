@@ -27,11 +27,13 @@ getLoginR = do
         addStylesheet $ StaticR css_main_css
         [whamlet|
             <section id="loginadmin">
-                <img src=@{StaticR img_logo_png} alt="" id="imglogin">
-                <h1>Adiministrator
-                <form action=@{LoginR} method=post enctype=#{enctype}>
-                    ^{widget}
-                    <input type="submit" value="Logar">
+                <img src=@{StaticR img_logo_png} alt="Logo Pixel Cakes" id="imglogin">
+                <h1>Administrator
+                
+                <div class="col-md-4 col-md-offset-4">
+                    <form action=@{LoginR} method=post enctype=#{enctype}>
+                        ^{widget}
+                        <input type="submit" value="Logar">
         |]
 
 getUsuarioR :: Handler Html
@@ -121,7 +123,7 @@ getPerfilR = do
                 
                                     <div id="navbar" class="navbar-collapse collapse">
                                         <ul class="nav navbar-nav">
-                                            <li class="divider">
+                                            <li class="active">
                                                 <a href=@{PerfilR}>home
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -153,7 +155,7 @@ getPerfilR = do
                                                             ver todos
                                             <li>
                                                 <a href=@{ListContR}>contatos
-                                            <li class="dropdown active">
+                                            <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                     usuários <span class="caret">
                                                 <ul class="dropdown-menu">
