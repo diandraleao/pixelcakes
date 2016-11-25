@@ -39,6 +39,8 @@ Contato
 
 mkYesodData "App" $(parseRoutesFile "routes")
 
+mkMessage "App" "messages" "pt-br"
+
 type Form a = Html -> MForm Handler (FormResult a, Widget)
 
 instance Yesod App where
