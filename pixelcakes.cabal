@@ -5,25 +5,21 @@ build-type:         Simple
 extra-source-files: routes
 
 executable          pixelcakes
-  main-is:          Main.hs
-  other-modules:    Application
-                    Foundation
+    main-is:            Main.hs
+  
+    ghc-options:        -threaded -O2 -rtsopts -with-rtsopts=-N
 
-                    Add
-                    Handler.Produtos
-                    Handler.Servicos
-                    Handler.Usuario
-                    Handler.Contato
+    build-depends:  base
+                    , yesod
+                    , yesod-static
+                    , text                          
+                    , persistent                    
+                    , persistent-postgresql
+                    , monad-logger
 
-  ghc-options:      -Wall -fwarn-tabs -O2
-                    -fforce-recomp
-
-  build-depends:  base
-                , yesod
-                , yesod-static
-                , text                          
-                , persistent                    
-                , persistent-postgresql
-                , monad-logger
-
-  ghc-options:    -threaded -O2 -rtsopts -with-rtsopts=-N
+    other-modules:    Application,
+                      Foundation,
+                      Handler.Produtos,
+                      Handler.Servicos,
+                      Handler.Usuario,
+                      Handler.Contato

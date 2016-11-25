@@ -15,11 +15,11 @@
                 <li>
                     <a href=@{IndexR}> _{MsgInicio}
                 <li>
-                    <a href="#about"> _{MsgSobre}
+                    <a href=@{IndexR}#about> _{MsgSobre}
                 <li>
                     <a href=@{ServicosR}> _{MsgServicos}
                 <li>
-                    <a href="#gallery"> _{MsgGaleria}
+                    <a href=@{IndexR}#gallery> _{MsgGaleria}
                 <li>
                     <a href=@{ProdutosR}> _{MsgPrecos}
                 <li>

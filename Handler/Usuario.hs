@@ -51,9 +51,11 @@ getUsuarioR = do
                     ^{nav}
                         <div class="container">
                             <h2>Cadastrar usuário</h2>
-                            <form action=@{UsuarioR} method=post enctype=#{enctype}>
-                                ^{widget}
-                                <input type="submit" value="Cadastrar" class="btn btn-default">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <form action=@{UsuarioR} method=post enctype=#{enctype}>
+                                        ^{widget}
+                                        <input type="submit" value="Cadastrar" class="btn btn-default">
                     ^{footer}
             |]
 

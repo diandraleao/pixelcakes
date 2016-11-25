@@ -10,3 +10,4 @@ Confira: check it
 TabelaPrecos: prices' table
 TextoPrecos: Beyond pretty, Pixel Cakes' candies are cheap. Don't believe? Check it!
 SaibaMais: know more
+Produtos: products

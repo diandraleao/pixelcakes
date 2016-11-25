@@ -10,3 +10,4 @@ Confira: confira
 TabelaPrecos: Tabela de preços
 TextoPrecos: Além de bonitos, os docinhos da Pixel Cakes são baratos. Não acredita? Confere aí!
 SaibaMais: saiba mais
+Produtos: produtos

@@ -30,9 +30,11 @@ getProdutoR = do
                     ^{nav}
                         <div class="container">
                             <h2>Cadastrar produto</h2>
-                            <form method=post action=@{ProdutoR} enctype=#{enctype}>
-                                ^{widget}
-                                <input type="submit" value="Cadastrar" class="btn btn-default">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <form method=post action=@{ProdutoR} enctype=#{enctype}>
+                                        ^{widget}
+                                        <input type="submit" value="Cadastrar" class="btn btn-default">
                     ^{footer}
          |]
 

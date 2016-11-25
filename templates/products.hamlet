@@ -1,5 +1,5 @@
 <main class="container">
-            <h2 class="text-center">Produtos </h2>
+            <h2 class="text-center text-capitalize"> _{MsgProdutos} </h2>
             <br>
             <div class="row">
             $forall Entity alid produto <- produtos
