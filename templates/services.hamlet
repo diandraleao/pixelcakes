@@ -1,7 +1,7 @@
 <article class="container-fluid" id="services">
-    <h2 class="h1">serviços</h2>
+    <h2 class="h1"> _{MsgServicos}</h2>
         <div class="row">
             <div class="container">
-                <h3 class="text-center">Participamos de feiras de start-ups, exposições de arte,<br> eventos em geral onde cabem docinhos, e também aceitamos encomendas.
+                <h3 class="text-center"> _{MsgTextoServico}
                 <p class="text-center">
-                    <a href=@{ServicosR} class="btn btn-lg btn-price">CONFIRA
+                    <a href=@{ServicosR} class="btn btn-lg btn-price text-uppercase"> _{MsgConfira}

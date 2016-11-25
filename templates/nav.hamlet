@@ -11,16 +11,16 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href=@{IndexR} style="padding:5px;"><img src=@{StaticR img_logo_png} alt="" style="height:50px;width:auto;">
+                    <a href=@{IndexR} style="padding:5px;"><img src=@{StaticR img_logo_png} alt="Logo Pixel Cakes" style="height:50px;width:auto;">
                 <li>
-                    <a href=@{IndexR}>home
+                    <a href=@{IndexR}> _{MsgInicio}
                 <li>
-                    <a href="#about">sobre
+                    <a href="#about"> _{MsgSobre}
                 <li>
-                    <a href=@{ServicosR}>serviços
+                    <a href=@{ServicosR}> _{MsgServicos}
                 <li>
-                    <a href="#gallery">galeria
+                    <a href="#gallery"> _{MsgGaleria}
                 <li>
-                    <a href=@{ProdutosR}>preços
+                    <a href=@{ProdutosR}> _{MsgPrecos}
                 <li>
-                    <a href=@{ContatoR}>contato
+                    <a href=@{ContatoR}> _{MsgContato}
